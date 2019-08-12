@@ -3,10 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using RevideWorkTest.Tests.Resources.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace RevideWorkTest.Tests
 {
@@ -41,7 +38,6 @@ namespace RevideWorkTest.Tests
             Assert.AreEqual("", verificationErrors.ToString());
         }
 
-
         protected UserModel createRandomUserData()
         {
             string randomNumber = random.Next(1111, 9999).ToString();
@@ -52,7 +48,6 @@ namespace RevideWorkTest.Tests
             userModel.MobilePhone = "076309" + randomNumber;
 
             return userModel;
-
         }
 
         protected void verifyUserRegistrationData(UserModel preRegdata, UserModel postRegdata)
